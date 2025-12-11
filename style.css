@@ -147,12 +147,52 @@ body {
 }
 
 
-/* Budget - giữ căn trái */
-.budget-list { text-align:left; display:block; max-width:600px; margin:0 auto; }
-.budget-item { margin-bottom:18px; }
-.budget-item span { font-weight:bold; display:block; margin-bottom:5px; }
-.budget-bar { height:20px; border-radius:10px; }
-.budget-note { font-size:0.9em; color:#555; margin-top:10px; }
+.budget-section {
+    text-align:center;
+    margin:40px auto;
+}
+
+.budget-list {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.budget-item {
+    background:#f3f4f6; /* nền nhạt */
+    border-radius:15px;
+    padding:15px 20px;
+    position:relative;
+
+    color:#111827;
+}
+
+.budget-item span {
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+}
+
+.budget-item p {
+    margin:0 0 10px 0;
+    padding:0; /* xóa padding thừa */
+}
+
+.budget-bar {
+    height:20px;
+    border-radius:10px;
+    transition: width 0.5s ease;
+}
+
+/* Budget note căn giữa */
+.budget-note {
+    margin-top:15px;
+    font-size:0.95em;
+    color:#374151;
+}
+
 
 /* Message Box */
 .message-box { background:#f9fafb; border-radius:15px; padding:25px; box-shadow:0 8px 20px rgba(0,0,0,0.15); border:3px solid #f6a23c; text-align:center; }
